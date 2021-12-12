@@ -1,0 +1,239 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+     :root {
+        font-size: 62.5%;
+        --gray-1: #333333;
+        --gray-2: #4F4F4F;
+        --gray-3: #828282;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        padding: 3rem 2rem 2rem 2rem;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+        font-family: 'Playfair Display', sans-serif;
+        margin-bottom: 1.2rem;
+    }
+    
+    .para {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .sub {
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .img {
+        height: auto;
+        width: 100%;
+        max-width: 970px;
+        margin-bottom: 3rem;
+    }
+    
+    .time {
+        margin-right: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .yields {
+        margin-bottom: 2.5rem;
+        display: flex;
+        gap: .5rem
+    }
+    
+    .yields .material-icons {
+        color: #F2994A;
+    }
+    
+    .square {
+        gap: .5rem;
+        display: flex;
+    }
+    
+    .card .title {
+        font-size: .8rem;
+        color: #BDBDBD;
+        text-transform: uppercase;
+    }
+    
+    .card .info {
+        color: var(--gray-1);
+    }
+    
+    .yields .info {
+        color: #F2994A;
+    }
+    
+    .form {
+        font-size: 1.4rem;
+    }
+    
+    h2,
+    h3 {
+        font-family: 'Playfair Display', sans-serif;
+    }
+    
+    h3 {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        color: var(--gray-1);
+    }
+    
+    .ingredients-title {
+        margin: 2rem 0;
+        font-size: 2.4rem;
+    }
+    
+    .form label {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        padding-left: 3rem;
+        line-height: 2.5rem;
+    }
+    
+    .checkbox {
+        position: absolute;
+        opacity: 1;
+        cursor: pointer;
+        left: 0;
+        top: 0;
+        height: 21px;
+        width: 21px;
+    }
+    
+    .form label:last-of-type {
+        margin-bottom: 1rem;
+    }
+    
+    .instructions {
+        font-size: 1.6rem;
+    }
+    
+    .instructions ol {
+        display: block;
+        list-style: none;
+        counter-reset: inst;
+        margin-bottom: 3rem;
+    }
+    
+    .instructions li {
+        padding-left: 5rem;
+        line-height: 2.5rem;
+        max-width: 80%;
+        position: relative;
+        counter-increment: inst;
+        margin-bottom: 3rem;
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    
+    .instructions li::before {
+        content: counter(inst);
+        color: white;
+        font-weight: bold;
+        font-size: 2.4rem;
+        font-family: 'Playfair display';
+        border-radius: .6rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3.6rem;
+        height: 3.6rem;
+        text-align: center;
+        background-color: #F2994A;
+    }
+    
+    .instructions-title {
+        margin: 2rem 0 4rem 0;
+        font-size: 2.4rem;
+    }
+    
+    .source {
+        color: #BDBDBD;
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-bottom: 10rem;
+    }
+    
+    footer {
+        text-align: center;
+        color: #828282;
+        font-size: 1.4rem;
+    }
+    
+    footer a {
+        color: #828282;
+        font-weight: bold;
+    }
+    
+    @media (min-width: 768px) {
+        body {
+            padding: 5rem 12rem 3rem 12rem;
+        }
+        .container {
+            position: relative;
+        }
+        h1 {
+            font-size: 4.8rem;
+        }
+        .sub {
+            font-size: 1.4rem;
+        }
+        .img {
+            margin-bottom: 5rem;
+        }
+        .flex-box {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .card {
+            padding: 3rem;
+            height: 50%;
+            border-radius: 1.2rem;
+            box-shadow: 0px 0px 20px 0px #0000001A;
+            padding: 0;
+        }
+        .yields {
+            margin: 4rem 4.5rem 4rem 4.5rem;
+        }
+        .time {
+            flex-direction: column;
+            gap: 4rem;
+            margin: 0 4.5rem 0 4.5rem;
+        }
+        .time:last-of-type {
+            margin-bottom: 4rem;
+        }
+        .form {
+            width: 70%;
+        }
+        .source {
+            font-size: 1.6rem;
+        }
+        footer {
+            font-size: 1.4rem;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        body {
+            padding: 5rem 24rem 3rem 24rem;
+        }
+    }
