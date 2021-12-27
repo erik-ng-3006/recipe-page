@@ -29,7 +29,6 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [How to use](#how-to-use)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -51,9 +50,9 @@ The page was built with basic HTML and CSS
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht) was to build an application to complete the following user stories:
 
-- [x] User story: This is a completed user stories
-- [ ] User story: This is a incompleted user stories
-- [ ] User story: This is a incompleted 2nd user stories
+- [x] User story:  I can see a recipe with ingredients and instructions
+- [x] User story:  I can select a checkbox if I have the ingredients
+- [x] User story: I can see the number of servings, baking times
 
 ## Acknowledgements
 
@@ -64,4 +63,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/erik-ng-3006/recipe-page)
+- GitHub [@erik-ng-3006](https://github.com/erik-ng-3006/recipe-page)
